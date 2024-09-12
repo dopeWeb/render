@@ -12,16 +12,10 @@ categories =[
     {"catid":3,"desc":"bakery"},]
 
 
-@app.route('/')
-def home():
-    return 'Hello, World!'
-
 
 @app.route('/categories')
 def get_categories():
     return categories
-
-
 
 
 
