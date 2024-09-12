@@ -14,7 +14,7 @@
     <div id="display"></div>
     
     <script>
-        const SERVER = "https://render-geyu.onrender.com/"
+        const SERVER = "https://render-geyu.onrender.com"
         axios(SERVER + "categories").then(res => display.innerHTML = "<select id='cats' onchange='samp_select()'>" + res.data.map(cat => `<option value=${cat.catid}>
             
             ${cat.desc}
